@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio01
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        //--------------------------------------------Programa que calcula o estoque médio de ma peça------------------------------
+
+        //Declaração de variáveis
+
+        int estoquemedio, qntminima, qntmaxima;
+
+        //Entrada de dados
+
+        Console.Write("Digite a quantidade mínima da peça: ");
+        qntminima = int.Parse(Console.ReadLine());
+
+        Console.Write("\nDigite a quantidade máxima da peça: ");
+        qntmaxima = int.Parse(Console.ReadLine());
+
+        //Processamento
+
+        estoquemedio = (qntminima + qntmaxima) / 2;
+
+        //Saída
+
+        Console.Write("\nO estoque médio é: {0}", estoquemedio);
+           
+        Console.ReadKey();
+        }
+    }
+}
