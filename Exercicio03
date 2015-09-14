@@ -1,0 +1,54 @@
+---------------------------------------------------------C#---------------------------------------------------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exercicio03
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.Write("-----------Programa para comissão do vendedor (5% do total da venda)------------");
+
+        //Declaração de variáveis
+
+        float  codigodapeca, precounitariodapeca, quantidadevendida, comissao, resultado;
+        string identdovendedor;
+
+        //Entrada de dado
+
+        Console.Write("\nINSIRA SUA IDENTIFICAÇÃO: ");
+        identdovendedor = (Console.ReadLine());
+
+        Console.Write("\nINSIRA O CÓDIGO DA PEÇA: ");
+        codigodapeca = float.Parse(Console.ReadLine());
+
+        Console.Write("\nINSIRA O PREÇO DA PEÇA: ");
+        precounitariodapeca = float.Parse(Console.ReadLine());
+
+        Console.Write("\nINSIRA A QUANTIDADE VENDIDA: ");
+        quantidadevendida = float.Parse(Console.ReadLine());
+
+        //Processamento
+
+        resultado = precounitariodapeca * quantidadevendida;
+        comissao = (resultado / 100) * 5;
+
+        //Saída
+
+        Console.Write("\nO total da sua venda foi de: {0} , e sua comissão será de: {1}", resultado, comissao);
+
+
+
+       Console.ReadKey();
+
+
+        }
+    }
+}
