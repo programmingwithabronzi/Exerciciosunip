@@ -1,0 +1,52 @@
+------------------------------------------------------------------C#--------------------------------------------------------
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.WriteLine("Quantidade de litros gastos em uma viagem");
+        Console.WriteLine("utilizando um automóvel que faz 12Km por litro.");
+        
+        //Declaração de variáveis
+
+        float distancia, tempo, velocidade, litrosusados;
+
+        //Entrada de dados
+
+        Console.Write("\nDigite o tempo gasto na viagem(em minutos): ");
+        tempo = float.Parse(Console.ReadLine());
+
+        Console.Write("\nDigite a velocidade média(apenas os números): ");
+        velocidade = float.Parse(Console.ReadLine());
+
+        //Processamento
+
+        distancia = tempo * velocidade;
+        
+        litrosusados = distancia / 12;
+
+        //Saída
+
+        Console.WriteLine("\nSua velocidade média foi ou será de: {0}Km", velocidade);
+
+        Console.WriteLine("\nO tempo gasto foi ou será de: {0} minutos", tempo);
+
+        Console.WriteLine("\nA distância percorrida foi ou será de: {0}Km", distancia);
+
+        Console.WriteLine("\nA quantidade de litros gastos foi ou será de: {0} litros", litrosusados);
+
+        Console.ReadKey();
+        }
+    }
+}
