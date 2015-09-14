@@ -11,7 +11,7 @@ namespace Exercicio01
         static void Main(string[] args)
         {
 
-        //--------------------------------------------Programa que calcula o estoque médio de ma peça------------------------------
+        //--------------------------------------------Programa que calcula o estoque médio de uma peça------------------------------
 
         //Declaração de variáveis
 
