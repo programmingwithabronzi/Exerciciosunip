@@ -1,0 +1,75 @@
+------------------------------------------------------------------C#---------------------------------------------------------
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.WriteLine("Ler quatro valores numéricos inteiros");
+        Console.WriteLine("e apresentar o resultado dois a dois da adição");
+        Console.WriteLine("e multiplicação entre os valores lidos,");
+        Console.WriteLine("baseando-se na utilização do conceito de propriedade distributiva.");
+
+        //Declaração de variáveis
+
+        int a, b, c, d;
+
+        //Entrada de dados
+
+        Console.Write("\nDigite um valor inteiro: ");
+        a = int.Parse(Console.ReadLine());
+
+        Console.Write("\nDigite um valor inteiro: ");
+        b = int.Parse(Console.ReadLine());
+
+        Console.Write("\nDigite um valor inteiro: ");
+        c = int.Parse(Console.ReadLine());
+
+        Console.Write("\nDigite um valor inteiro: ");
+        d = int.Parse(Console.ReadLine());
+
+        //Processamento e Saída
+
+        Console.WriteLine("\nA + B = {0} ", a + b);
+
+        Console.WriteLine("\nA + C = {0} ", a + c);
+
+        Console.WriteLine("\nA + D = {0} ", a + d);
+
+        Console.WriteLine("\nB + C = {0} ", b + c);
+
+        Console.WriteLine("\nB + D = {0} ", b + d);
+
+        Console.WriteLine("\nC + D = {0} ", c + d);
+
+        Console.WriteLine("\nAgora a multiplicação:");
+
+        Console.WriteLine("\nA * B = {0} ", a * b);
+
+        Console.WriteLine("\nA * C = {0} ", a * c);
+
+        Console.WriteLine("\nA * D = {0} ", a * d);
+
+        Console.WriteLine("\nB * C = {0} ", b * c);
+
+        Console.WriteLine("\nB * D = {0} ", b * d);
+
+        Console.WriteLine("\nC * D = {0} ", c * d);
+
+        Console.ReadKey();
+
+
+        }
+    }
+}
