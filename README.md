@@ -1,1 +1,1 @@
-# Esses exercícios não são de autoria minha. São apenas exercícios resolvidos da faculdade para treinamento pessoal.
+# Esses exercícios não são de criação minha. São apenas exercícios resolvidos por mim, da faculdade para treinamento pessoal.
