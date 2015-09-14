@@ -1,0 +1,44 @@
+------------------------------------------------------------C#---------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio02
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.Write("--------------------Programa que transforma dólar em real-----------------------");
+
+        //Declaração de variáveis
+
+        float valoremdolar, cotacaodolar, resultado;
+
+        //Entrada de dados
+
+        Console.Write("\n Digite a cotação do dólar: ");
+        cotacaodolar = float.Parse(Console.ReadLine());
+
+        Console.Write("\n Digite o valor em dólar: ");
+        valoremdolar = float.Parse(Console.ReadLine());
+
+        //Processamento
+
+        resultado = cotacaodolar * valoremdolar;
+
+
+        //Saída
+
+        Console.Write("\n O valor em reais é: {0}", resultado);
+
+      
+        Console.ReadKey();
+
+        }
+    }
+}
