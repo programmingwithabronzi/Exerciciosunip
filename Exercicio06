@@ -1,0 +1,39 @@
+--------------------------------------------------------------C#---------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio06
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.WriteLine("Programa que lê temperatura em celsius e transforma em Fahrenheit");
+
+        //Declaração de Variáveis
+
+        float celsiudousuario, fahrenheit;
+
+        //Entrada de dados
+
+        Console.Write("\nDigite uma temperatura em celsius: ");
+        celsiudousuario = float.Parse(Console.ReadLine());
+
+        //Processamento 
+
+        fahrenheit = (9 * celsiudousuario + 160) / 5;
+
+
+        //Saída
+
+        Console.Write("\nA temperatura convertida em Fahrenheit é: {0}", fahrenheit);
+
+        Console.ReadKey();
+        }
+    }
+}
