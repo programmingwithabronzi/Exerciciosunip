@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.WriteLine("Programa que calcula o volume de uma lata de óleo");
+--------------------------------------------------------------C#----------------------------------------------        
+        //Declaração de variáveis
+
+        double r, a, v;
+
+        //Entrada de dados
+
+        Console.Write("\nDigite o raio da lata: ");
+        r = double.Parse(Console.ReadLine());
+
+        Console.Write("\nDigite a altura da lata: ");
+        a = double.Parse(Console.ReadLine());
+
+        //Processamento
+
+        v = 3.14159 * r * r * a;
+
+        //Saída
+
+        Console.Write("\nO volume da lata é: {0}", v);
+
+        Console.ReadKey();
+
+        }
+    }
+}
