@@ -20,13 +20,13 @@ namespace ConsoleApplication6
 
         //Entrada de dados
 
-        Console.Write("Digite a sua idade: ");
+        Console.Write("\nDigite a sua idade: ");
         idade = int.Parse(Console.ReadLine());
 
-        Console.Write("Digite quanto meses já se passaram após o seu aniversário(Completos): ");
+        Console.Write("\nDigite quanto meses já se passaram após o seu aniversário(Completos): ");
         mes = int.Parse(Console.ReadLine());
 
-        Console.Write("Digite quantos dias faltam pra completar esse Mês, caso não tenha terminado: ");
+        Console.Write("\nDigite quantos dias faltam pra completar esse Mês, caso não tenha terminado: ");
         dias = int.Parse(Console.ReadLine());
 
         //Processamento
