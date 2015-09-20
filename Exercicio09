@@ -1,0 +1,44 @@
+-----------------------------------------------------------------c#--------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        Console.WriteLine("Programa que mostra quantos dias a pessoa já viveu");
+
+        //Declaração de variáveis
+
+        int idade, mes, dias, totalemdias;
+
+        //Entrada de dados
+
+        Console.Write("Digite a sua idade: ");
+        idade = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite quanto meses já se passaram após o seu aniversário(Completos): ");
+        mes = int.Parse(Console.ReadLine());
+
+        Console.Write("Digite quantos dias faltam pra completar esse Mês, caso não tenha terminado: ");
+        dias = int.Parse(Console.ReadLine());
+
+        //Processamento
+
+        totalemdias  = (idade * 365) + (mes * 30) + dias;
+
+        //saida
+
+        Console.Write("Você já viveu {0} dias", totalemdias);
+
+        
+        Console.ReadKey();
+        }
+    }
+}
