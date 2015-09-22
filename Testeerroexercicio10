@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        Console.WriteLine("Programa que mostra os relacionamentos possivéis entre 2 valores");
+
+        //Declaração de variáveis
+
+        int primeiroValor, segundoValor;
+
+        //Entrada de dados
+
+        Console.Write("\nDigite o primeiro número: ");
+        primeiroValor= int.Parse(Console.ReadKey());
+
+        Console.Write("\nDigite o segundo número: ");
+        segundoValor = int.Parse(Console.ReadKey());
+
+        //Processamento e saída
+            
+        if(primeiroValor == segundoValor)
+          {
+            Console.Write("\nIgual");
+
+          }
+        if(primeiroValor != segundoValor)
+          {
+            Console.Write("\ndiferente");
+
+          }
+        if(primeiroValor >= segundoValor)
+          {
+            Console.Write("\nO primeiro valor é maior ou igual");
+
+          }
+        if (primeiroValor <= segundoValor)
+          {
+            Console.Write("\nO primeiro valor é menor ou igual");
+
+          }
+        if (segundoValor >= primeiroValor)
+          {
+            Console.Write("\nO segundo valor é maior ou igual");
+
+          }
+        if (segundoValor <= primeiroValor)
+          {
+
+            Console.Write("\nO segundo valor é menor ou igual");
+          }
+               
+         Console.ReadKey();
+
+        }
+    }
+}
