@@ -20,10 +20,10 @@ namespace ConsoleApplication7
         //Entrada de dados
 
         Console.Write("\nDigite o primeiro número: ");
-        primeiroValor= int.Parse(Console.ReadKey());
+        primeiroValor= int.Parse(Console.ReadLine());
 
         Console.Write("\nDigite o segundo número: ");
-        segundoValor = int.Parse(Console.ReadKey());
+        segundoValor = int.Parse(Console.ReadLine());
 
         //Processamento e saída
             
