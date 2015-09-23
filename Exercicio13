@@ -1,0 +1,58 @@
+---------------------------------------------------------------------C#-----------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Programa que lê 3 numeros e depois os ordena em ordem descrecente");
+
+            //Declaração de variáveis
+
+            float a, b, c, troca;
+
+            //Entrada de dados
+
+            Console.Write("Digite o primeiro número ");
+            a = float.Parse(Console.ReadLine());
+
+            Console.Write("Digite o segundo número ");
+            b = float.Parse(Console.ReadLine());
+
+            Console.Write("Digite o terceiro número ");
+            c = float.Parse(Console.ReadLine());
+
+            //Processamento e saída
+
+            if (a > b)
+            {
+                troca = b;
+                b = a;
+                a = troca;
+            }
+            if (b > c)
+            {
+                troca = c;
+                c = b;
+                b = troca;
+            }
+            if (a > b)
+            {
+                troca = b;
+                b = a;
+                a = troca;
+            }
+
+            Console.Write("{0} , {1} , {2}", c,b,a);
+
+        }
+    }
+}
