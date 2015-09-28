@@ -1,0 +1,50 @@
+--------------------------------------------------------------c#----------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("\nprograma que lê dois números e informa o valor do maior número e o valor do menor número.");
+
+            //Declaração de variáveis
+
+            float n1, n2;
+
+            //Entrada de dados
+
+            Console.Write("\nDigite um número: ");
+            n1 = float.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite um outro número: ");
+            n2 = float.Parse(Console.ReadLine());
+
+            //Processamento e saída
+
+            if(n1 > n2)
+            {
+
+                Console.WriteLine("\nO maior número entre eles é {0}", n1);
+
+            }if(n2 > n1)
+            {
+
+                Console.WriteLine("\nO maior número entre eles é {0}", n2);
+
+            }if(n1 == n2){
+
+                Console.WriteLine("\nOs números são iguais");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
