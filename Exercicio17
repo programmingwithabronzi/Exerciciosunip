@@ -1,0 +1,44 @@
+-----------------------------------------------------------C#------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio17
+{
+    class Exercicio17
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Programa que verifica se o número digitado está entre 0 e 9");
+
+            //Declaração de variáveis
+
+            int num1;
+
+            //Entrada de dados
+
+            Console.Write("\nDigite um número: ");
+            num1 = int.Parse(Console.ReadLine());
+
+            //Processamento e saída
+
+            if(num1 >= 0 && num1 <= 9)
+            {
+
+                Console.WriteLine("\nNúmero válido");
+
+            }
+            else
+            {
+
+                Console.WriteLine("\nValor inválido");
+
+            }
+            Console.ReadKey();
+        }
+    }
+}
