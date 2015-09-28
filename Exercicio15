@@ -1,0 +1,71 @@
+------------------------------------------------------c#----------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio15
+{
+    class exercicio15
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Programa pra saber se o aluno foi aprovado");
+
+
+            //Declaração de variáveis
+
+            float nota1, nota2, nota3, nota4, notarec , media, mediarec;
+
+            //Entrada de dados
+
+            Console.Write("\nDigite a primeira nota: ");
+            nota1 = float.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite a segunda nota: ");
+            nota2 = float.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite a terceira nota: ");
+            nota3 = float.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite a quarta nota: ");
+            nota4 = float.Parse(Console.ReadLine());
+            //Processamento e saída
+
+            media = (nota1 + nota2 + nota3 + nota4) /4;
+
+            if (media >= 7)
+            {
+
+                Console.WriteLine("\nParabéns, você foi aprovado e sua média foi {0}", media);
+                
+            }if(media < 7)
+            {
+
+                Console.Write("\nVocê ainda não foi aprovado e sua média foi {0}, digite a nota da recuperação: ", media);
+                notarec = float.Parse(Console.ReadLine());
+                mediarec = (media + notarec) / 2;
+
+                if (mediarec >= 7)
+                {
+
+                    Console.WriteLine("\nFoi aprovado na recuperação. Sua nova média foi {0}", mediarec);
+
+
+                }
+                else
+                {
+
+                    Console.WriteLine("Você não foi aprovado, sua média foi {0}", mediarec);
+
+                }
+
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
