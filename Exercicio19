@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Exercicio18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Programa que verifica o tipo de triângulo e se ele é inválido
+            
+            float a, b, c;
+
+            Console.Write("Digite um valor para o lado a: ");
+            a = float.Parse(Console.ReadLine());
+
+            Console.Write("Digite um valor para o lado b: ");
+            b = float.Parse(Console.ReadLine());
+
+            Console.Write("Digite um valor para o lado c: ");
+            c = float.Parse(Console.ReadLine());
+
+
+            Console.WriteLine(testarTriangulo(a, b, c));
+
+            Console.ReadKey();
+        }
+                      
+
+        static String testarTriangulo(float a, float b, float c) 
+        { 
+        
+            if ( (a < (b + c)) && (b < (a + c)) && (c < (b + a)) )  {
+            
+                if( a == b && b == c)
+                {               
+                    return "Equilátero";
+                }
+                else if ( a == b || a == c || b == c )
+                {                
+                     return "Isóceles";                
+                }
+                else return "ESCALENO";            
+            
+            }
+            return "triangulo invalido";
+        
+        
+        }
+    
+    }
+}
