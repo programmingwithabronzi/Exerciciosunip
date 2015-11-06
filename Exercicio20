@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio20
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //Programa que exibe o menor valor lido multiplicado pelo maior e o maior valor dividido pelo menor.
+            
+            int a, menorNumero = 0, maiorNumero = 0;
+            int b ;
+            int c ;
+
+            Console.Write("Digite um número para a: ");
+            a = int.Parse(Console.ReadLine());
+
+            if (a == 0) 
+            {
+                while (a == 0)
+                {
+                    Console.WriteLine("\nNÚMERO INVÁLIDO");
+                    Console.Write("\nDigite um número para a novamente: ");
+                    a = int.Parse(Console.ReadLine());
+                }
+            }
+            
+            Console.Write("\nDigite um número para b: ");
+            b = int.Parse(Console.ReadLine());
+
+            Console.Write("\nDigite um número para c: ");
+            c = int.Parse(Console.ReadLine());
+
+
+            if (a <= b)
+            {             
+                if (a <= c)
+                {
+                    menorNumero = a;
+                }                      
+            }
+            if(b >= c)
+            {
+                maiorNumero = b;
+            }
+            else if (b <= c) 
+            {
+                maiorNumero = c;
+            }
+
+            Console.WriteLine("\nO menor valor lido multiplicado pelo maior é: {0}", (menorNumero * maiorNumero) );
+
+            Console.WriteLine("\nO maior valor dividido pelo menor: {0}", (maiorNumero / menorNumero));
+
+            Console.ReadKey();
+        
+        }
+    }
+}
